@@ -10,7 +10,13 @@ int main()
     svr.Get("/hi", [](const Request & /*req*/, Response &res) {
       res.set_content("Hello World!", "text/plain");
     });
+
+    svr.Get("/ho", [](const Request & /*req*/, Response &res) {
+        res.set_content("Hello!", "text/plain");
+      });
+    
   
+    
     svr.listen("0.0.0.0", 8080);
 
     return 0;
