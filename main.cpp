@@ -14,6 +14,9 @@ int main()
     svr.Get("/ho", [](const Request & /*req*/, Response &res) {
         res.set_content("Hello!", "text/plain");
       });
+      svr.Get("/he", [](const Request & /*req*/, Response &res) {
+        res.set_content("Hello!eee", "text/plain");
+      });
     
   
     
