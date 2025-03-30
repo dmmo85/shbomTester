@@ -1,5 +1,10 @@
 name: "Generate and Upload SBOM"
-on: [push, pull_request, workflow_dispatch]
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Weekly on Sundays at midnight
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   generate_sbom:
