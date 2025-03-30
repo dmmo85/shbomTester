@@ -4,14 +4,15 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/usr/include/c++/13",  // Path to the C++ standard library headers
-                "/usr/include//x86_64-linux-gnu",  // Architecture-specific include path
-                "/usr/include",  // General system headers
-                "/usr/local/include"
+                "/usr/include/c++/13",
+                "/usr/include//x86_64-linux-gnu",
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/include/nlohmann"
             ],
             "defines": [],
-            "cStandard": "c11",
-            "cppStandard": "gnu++11",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
             "intelliSenseMode": "linux-gcc-x64",
             "compilerPath": "/usr/bin/g++"
         }

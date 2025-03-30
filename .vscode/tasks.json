@@ -8,7 +8,10 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
-                "-std=c++11",
+                "-std=c++17",
+                "-lcurl",
+                "-lpqxx",
+                "-lpq",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
